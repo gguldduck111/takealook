@@ -12,4 +12,9 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+    .sass('resources/sass/app.scss', 'public/css')
+    .styles(['resources/css/base.css','resources/css/layout.css','resources/css/jquery.mCustomScrollbar.css','resources/css/total_Style.css',],'public/css/all.css')
+    .copyDirectory('resources/images', 'public/images')
+    .copyDirectory('resources/font', 'public/font');
+
+

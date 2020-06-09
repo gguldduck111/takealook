@@ -1,3 +1,184 @@
+@charset "utf-8";
+/* WSU 202005 */
+
+/* 폰트 */
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 100;
+	src: local('Noto Sans Thin'), local('NotoSans-Thin'),
+	url('../fonts/eot/NotoSansKR-Thin-Hestia.eot'),
+	url('../fonts/eot/NotoSansKR-Thin-Hestia.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/woff/NotoSansKR-Thin-Hestia.woff') format('woff'),
+	url('../fonts/otf/NotoSansKR-Thin-Hestia.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Noto Sans Light'), local('NotoSans-Light'),
+	url('../fonts/eot/NotoSansKR-Light-Hestia.eot'),
+	url('../fonts/eot/NotoSansKR-Light-Hestia.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/woff/NotoSansKR-Light-Hestia.woff') format('woff'),
+	url('../fonts/otf/NotoSansKR-Light-Hestia.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 350;
+	src: local('Noto Sans DemiLight'), local('NotoSans-DemiLight'),
+	url('../fonts/eot/NotoSansKR-DemiLight-Hestia.eot'),
+	url('../fonts/eot/NotoSansKR-DemiLight-Hestia.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/woff/NotoSansKR-DemiLight-Hestia.woff') format('woff'),
+	url('../fonts/otf/NotoSansKR-DemiLight-Hestia.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Noto Sans Regular'), local('NotoSans-Regular'),
+	url('../fonts/eot/NotoSansKR-Regular-Hestia.eot'),
+	url('../fonts/eot/NotoSansKR-Regular-Hestia.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/woff/NotoSansKR-Regular-Hestia.woff') format('woff'),
+	url('../fonts/otf/NotoSansKR-Regular-Hestia.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Noto Sans Medium'), local('NotoSans-Medium'),
+	url('../fonts/eot/NotoSansKR-Medium-Hestia.eot'),
+	url('../fonts/eot/NotoSansKR-Medium-Hestia.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/woff/NotoSansKR-Medium-Hestia.woff') format('woff'),
+	url('../fonts/otf/NotoSansKR-Medium-Hestia.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Noto Sans Bold'), local('NotoSans-Bold'),
+	url('../fonts/eot/NotoSansKR-Bold-Hestia.eot'),
+	url('../fonts/eot/NotoSansKR-Bold-Hestia.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/woff/NotoSansKR-Bold-Hestia.woff') format('woff'),
+	url('../fonts/otf/NotoSansKR-Bold-Hestia.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-style: normal;
+	font-weight: 900;
+	src: local('Noto Sans Black'), local('NotoSans-Black'),
+	url('../fonts/eot/NotoSansKR-Black-Hestia.eot'),
+	url('../fonts/eot/NotoSansKR-Black-Hestia.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/woff/NotoSansKR-Black-Hestia.woff') format('woff'),
+	url('../fonts/otf/NotoSansKR-Black-Hestia.otf') format('opentype');
+}
+
+/* 요소(element) 여백 초기화  */
+html,body,div,h1,h2,h3,h4,h5,h6,p,span,ul,ol,dl,dt,dd,form{margin:0; padding:0;}
+body {color:#0B1117; font-size:16px; font-family:'Noto Sans KR',Sans-serif; letter-spacing:-0.5px;font-weight: 300;}
+a, a:link { color:inherit; text-decoration: none;}
+a:visited { color:inherit; }
+a:hover, a:active, a:focus { color:inherit; text-decoration:none; }
+img {border:0; vertical-align:top;}
+b{font-weight:500;}
+
+/* 목록 */
+ol, ul {list-style:none;}
+
+/* 텍스트 관련 요소 초기화 */
+address, caption, em, cite {font-weight:normal; font-style:normal;}
+
+/* 테두리 없애기 */
+fieldset, img, abbr, acronym { border:none; margin:0; padding:0;} 
+
+/* 테이블 - 마크업에 'cellspacing="0"' 지정 함께 필요 */
+table { border-collapse:collapse; border-spacing:0;}
+
+/* 수평선*/
+hr { display:none; }
+
+/* 전역클래스 */
+.v_hidden{visibility: hidden;}
+.hidden {position:absolute; top:-10000em; overflow:hidden; height:0px; width:0px;}
+.dt_none {display:none;}
+.fl {float:left;}
+.fr {float:right;}
+@charset "utf-8";
+/* WSU 202005 */
+
+*, *::after, *::before {box-sizing:border-box;word-break:keep-all;}
+input[type=text], input[type=button], input[type=password], textarea, button {outline-style:none; -webkit-appearance:none; -webkit-border-radius:0;}
+select{background:#fff;}
+input[type=checkbox], input[type=radio]{border:1px solid #666;}
+
+/* wrap */
+#wrap{position:relative; overflow:hidden;background: #eee;}
+
+/* container_wrap */
+#container_wrap{position:relative; overflow:hidden; padding: 12px 0 0 0;}
+#container_wrap .container{background:#fff; overflow:hidden;padding: 0 10px;}
+
+/* header */
+#header{position:relative;    background:#0f4c81; overflow:hidden;z-index: 1;box-shadow: 3px 6px 6px rgba(0,0,0,0.06);}
+#header h1{height:50px; padding:13px 0; text-align:center; background:#0f4c81; overflow:hidden;}
+#header h1 a{display:inline-block;height: 24px;}
+#header h1 a img{height:100%;}
+#header .gnb{position:relative; background:#fff; overflow:hidden;height: 50px;padding: 10px 0;}
+#header .gnb ul{overflow:hidden;text-align: left;padding: 0 10px;}
+#header .gnb ul li{position:relative; display:inline-block; height:30px; line-height:30px;  overflow:hidden;padding: 0 10px;}
+#header .gnb ul li a{display:block; font-size:16px; font-weight:500;padding: 0;}
+#header .gnb ul li.on a{color:#0f4c81;border-bottom: 2px solid #0f4c81;height: 30px;}
+#header .gnb .btn_more{position: absolute;right: 0;top: 0;height: 50px;}
+#header .gnb .btn_more img{height: 100%;}
+#header .gnb ul li:last-child{padding-right:60px !important;}
+#header .gnb.more{height:auto;}
+#header .gnb.more ul li:last-child{padding-right:0 !important;}
+#header .gnb.more ul .mCSB_horizontal.mCSB_inside > .mCSB_container{width: 100% !important;}
+
+/* index_mn */
+.index_mn{position:relative; overflow:hidden;background: #fff;}
+.index_mn ul{overflow:hidden;}
+.index_mn ul li{position:relative; border-bottom:1px solid #ddd; overflow:hidden;}
+.index_mn ul li a{display:block; line-height:24px; font-size:16px; padding:15px 20px;font-weight: 400;}
+.index_mn ul li a span{position:absolute; right:20px; background:url('../../images/common/img_arrow.png') no-repeat; background-size:8px 14px;width: 8px;height: 14px;top: 20px;}
+
+/* 거래금액 */
+.cont_title1{position:relative; overflow:hidden;z-index: 1;padding: 10px 0;background: #fff;}
+.cont_title1 .btn_text{display:block; font-size:16px; font-weight:500;text-align: center;color: #fff;line-height: 40px;background: #555;}
+.cont_title1 .btn_text span{position: absolute;right: 18px;top: 19px;width: 22px;height: 22px;border: 2px solid #fff;border-radius: 12px;line-height: 18px;font-size: 14px;}
+
+.popup_wrap{position:absolute; overflow:hidden;z-index: 2; visibility:hidden; transition:all 0.5s ease;opacity: 0;top: 72px;left: 0;right: 0;top: 52px;}
+.popup_wrap.on{opacity:1; visibility:inherit; transition:all 0.5s ease;top: 72px;}
+.popup_wrap .popup{position:relative; width:280px; margin:0 auto; border:2px solid #333; background:#fff; border-radius:8px; box-shadow:4px 8px 8px rgba(0,0,0,0.1); overflow:hidden;padding: 10px 15px;}
+.popup_wrap .popup p{font-size:14px; line-height:24px; word-break:keep-all;}
+.popup_wrap .popup p span{color:#0f4c81;font-weight: 400;}
+.popup_wrap .popup .btn_close{position:absolute; right:10px; top:10px;}
+.popup_wrap .popup .btn_close img{width:14px; height:14px;}
+
+.t_header{position:relative; overflow:hidden;background: #fff;z-index: 1;padding: 0;}
+.t_header ul{overflow:hidden;background: #f9f9f9;border-bottom: 2px solid #333;}
+.t_header ul li{position:relative; float:left; text-align:center; font-size:15px; line-height:20px; padding:20px 5px; overflow:hidden;font-weight: 400;}
+.t_header ul li:nth-child(1){width:36%;}
+.t_header ul li:nth-child(2){width:30%;}
+.t_header ul li:nth-child(3){width:34%; padding:10px 5px; font-size:13px;}
+
+.list_box{position:relative;  overflow:hidden;}
+.list_box ol{overflow:hidden;}
+.list_box ol li{position:relative; overflow:hidden;border-bottom: 1px solid #eee;}
+.list_box ol li p{float:left; text-align:center; font-size:15px; line-height:22px; padding:20px 5px; overflow:hidden;}
+.list_box ol li .num{width:6%;}
+.list_box ol li .name{width:30%;}
+.list_box ol li .quantity{width:30%;}
+.list_box ol li .price{width:34%; padding:10px 5px; font-size:13px;}
+.list_box ol li .price span{display:block;}
+.list_box ol li .price span.up{color:#d94142;font-weight: 400;}
+.list_box ol li .price span.down{color:#4173d9;}
 /*
 == malihu jquery custom scrollbar plugin ==
 Plugin URI: http://manos.malihu.gr/jquery-custom-content-scroller
@@ -1269,3 +1450,8 @@ yx-axis
 	.mCS-inset-3-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{ background-color: #fff; background-color: rgba(255,255,255,0.9); }
 	
 	/* ---------------------------------------- */
+
+@charset "utf-8";
+
+@import url("base.css"); /* 기본 CSS */
+@import url("layout.css"); /* 레이아웃 CSS */
